@@ -60,6 +60,8 @@ public_html/    - root catalog folder
     -s api/
     -s xjsl/
     -s less.js
+    favicon.png - иконка сайта
+    style/      - корпоративный стиль
   order/        - order.greenproject.me
     -s api/
     -s xjsl/
@@ -100,4 +102,16 @@ public_html/    - root catalog folder
     -s less.js
     less/      - компилятор less
     page/      - конструктор page-проектов
+```
+
+При создании новой папки для дочернего домена лучше использовать скрипт `../folder.sh` для автоматического наведения ссылок
+```sh
+$ sh ../folder.sh %foldername%
+
+// Результат
+$ ls %foldername%
+api/
+xjsl/
+brand/
+less.js
 ```
